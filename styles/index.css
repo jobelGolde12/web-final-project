@@ -1,0 +1,75 @@
+body{
+    background: url('../images/Konona-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+.main-container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-container .left{
+    position: relative;
+    width: 10%;
+    height: 80%;
+    top: 4%;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 0 16px 16px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(-100%);
+    animation: animateLeft 1s ease forwards;
+}
+.left .list{
+    text-align: center;
+    padding: 1rem 1.3rem;
+    border-radius: 10px;
+    color: var(--clr-primary);
+}
+.list i{
+    font-size: 1.7rem;
+}
+.left .list:not(.active-link):hover{
+    background: rgba(0, 0, 0, 0.1);
+    color: #ccc;
+}
+@keyframes animateLeft{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.main-container .right{
+    position: relative;
+    width: 90%;
+    right: 0;
+    height: 100%;
+    background: transparent;
+}
+.right .right-container{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top: 14%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}

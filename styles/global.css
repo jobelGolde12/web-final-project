@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+:root{
+    --clr-primary: #fff;
+    --clr-secondary: #333;
+    --clr-hover: #198754;
+}
+.active-link, .active-link:hover{
+    background: var(--clr-hover);
+    color: var(--clr-primary);
+}
+.pointer{
+    cursor: pointer;
+}
+body{
+    background: url('../images/Konona-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+.main-container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-container .left{
+    position: relative;
+    width: 10%;
+    height: 80%;
+    top: 4%;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 0 16px 16px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(0);
+    /* animation: animateLeft 1s ease forwards; */
+}
+.left .list{
+    text-align: center;
+    padding: 1rem 1.3rem;
+    border-radius: 10px;
+    color: var(--clr-primary);
+}
+.list i{
+    font-size: 1.7rem;
+}
+.left .list:not(.active-link):hover{
+    background: rgba(0, 0, 0, 0.1);
+    color: #ccc;
+}
+@keyframes animateLeft{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.main-container .right{
+    position: relative;
+    width: 90%;
+    right: 0;
+    height: 100%;
+    background: transparent;
+}
+.right .right-container{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top: 14%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.right-container .image-container{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img{
+    position: relative;
+    width:45%;
+    height: 80%;
+    /* object-fit: cover; */
+    display: block;
+}
+.right-container .content-container{
+    width: 60%;
+    height: 100%;
+    padding: 2rem 0;
+    color: var(--clr-secondary);
+}
+.content-container h1, .content-container p{
+    text-shadow: 1px 1px 2px var(--clr-primary);
+}
+.content-container h1{
+    margin-bottom: .5rem;
+}
+.content-container .action{
+    position: relative;
+    margin-top: 2rem;
+}
+.content-container .action a{
+    padding: .5rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--clr-primary);
+    background: #333;
+}
+.action a:nth-child(2){
+    background: transparent;
+    color: var(--clr-primary);
+
+}
+.content-container .bottom{
+    position: relative;
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom a{
+    color: var(--clr-primary);
+    text-decoration: none;
+    font-size: 3rem;
+    background: #333;
+    clip-path: circle(40%);
+}
+.bottom a:hover{
+    color: var(--clr-hover);
+}

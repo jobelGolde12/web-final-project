@@ -1,0 +1,17 @@
+.member-hero{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #f5f5f5f5;
+    padding: 1rem;
+}
+.member-hero .member-container{
+    position: relative; 
+    width: 30%;
+    height: 40%;
+    background: #000;
+}

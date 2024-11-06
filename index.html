@@ -6,7 +6,7 @@
     <title>Naruto</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="./styles/global.css">
 </head>
 <body>
     <div class="main-container">
@@ -36,33 +36,41 @@
         <div class="right">
             <div class="right-container">
                 <div class="image-container">
-                    <img src="../images/naruto.png" style="max-width: 100px; min-width: 100px; height: auto;" alt="Character image">
+                    <img src="./images/naruto.png" style="max-width: 100px; min-width: 100px; height: auto;" alt="Character image">
                 </div>
                 <div class="content-container">
                     <h1>Naruto Uzumaki</h1>
                     <p>Naruto Uzumaki, a determined ninja with boundless energy, dreams of becoming Hokage. Known for his resilience, he overcomes adversity, harnessing the powerful Nine-Tails fox spirit within him.</p>
                     <div class="action">
                         <a href="https://naruto-official.com/en">Official site</a>
-                        <a href="./videos/videos.html">Videos <i class="bi bi-arrow-right"></i></a>
+                        <a href="./pages/videos/videos.html">Videos <i class="bi bi-arrow-right"></i></a>
                     </div>
                     <div class="bottom">
-                        <a href="./minato.html"><i class="bi bi-arrow-left-short"></i></a>
-                        <a href="./jiraiya.html"><i class="bi bi-arrow-right-short"></i></a>
+                        <a href="./pages/minato.html"><i class="bi bi-arrow-left-short"></i></a>
+                        <a href="./pages/jiraiya.html"><i class="bi bi-arrow-right-short"></i></a>
                     </div>
                 </div>
             </div>
             <div class="right-footer">
                 <div>
-                    <a href="./members.html"><i class="bi bi-people"></i></a>
+                    <a href="./pages/members.html"><i class="bi bi-people"></i></a>
                 </div>
                 <div>
-                    <a href="./members.html">See Project Member</a>
+                    <a href="./pages/members.html">See Project Member</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="overlay"></div>
 
-    <script src="../js/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const list = document.querySelector('.video-list');
+        list .addEventListener('click', () => {
+            window.location.href = './pages/videos/videos.html';
+
+            })
+        })
+    </script>
 </body>
 </html>

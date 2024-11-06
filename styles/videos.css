@@ -16,6 +16,21 @@ section{
     height: 100vh;
     background: rgba(0,0,0,.5);
 } */
+ .left{
+    position: fixed;
+    top: 30%;
+    left: 0;
+    gap: 1rem;  
+ }
+ .left .list{
+    text-align: center;
+    padding: .6rem;
+    border-radius: 10px;
+    color: var(--clr-primary);
+}
+ .list i{
+    font-size: 1rem;
+}
 .header{
     position: absolute;
     width: 100vw;

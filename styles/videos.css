@@ -198,3 +198,66 @@ section{
     left: 0;
     color: rgba(0,0,0,.5);
 }
+@media screen and (max-width: 988px){
+    #hero .container h1{
+        font-size: 3rem;
+    }
+    .container-right .title{
+        font-size: 1.2rem;
+    }
+    .container-right .sub-content{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 757px){
+    #hero .container h1{
+        font-size: 2rem;
+    }
+    #hero .hero-link a{
+        padding: .5rem 1rem;
+    }
+    #videos .container{
+        position: relative;
+        width: 80%;
+        min-height: 90vh;
+        flex-direction: column;
+    }
+    .container .container-left, .container .container-right{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        padding: .5rem;
+    }
+    .container .container-right{
+        background: transparent;
+        transform: translateY(-30%);
+    }
+    .container .container-left::after{
+        content: 'Full screen for amazing view';
+        position: absolute;
+        bottom: -5%;
+        left: 2%;
+        color: rgba(0,0,0,.5);
+    }
+    .container-right .stars{
+        position: absolute;
+        top: 160%;
+    }
+    .scroll-down div{
+        width: 45px;
+        height: 45px;
+    } 
+    .scroll-down i{
+        font-size: 2rem;
+        font-weight: bolder;
+        animation: animateI 1s ease infinite;
+    
+    }
+    
+}
+@media screen and (max-width: 509px){
+    #hero .container h1{
+        font-size: 1.5rem;
+    }
+}

@@ -16,6 +16,15 @@
 .pointer{
     cursor: pointer;
 }
+.top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15vw;
+    height: 5%;
+    display: flex;
+    gap: 2rem;
+}
 body{
     background: url('../images/Konona-bg.png') no-repeat center center;
     background-size: cover;

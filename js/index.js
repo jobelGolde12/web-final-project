@@ -22,3 +22,21 @@ window.addEventListener('scroll', () => {
       logo.classList.remove('animate-logo');
     }
   });
+
+  function switchToDarkTheme() {
+    document.body.style.backgroundColor = '#333';
+    document.body.style.color = '#fff';
+    let elements = document.querySelectorAll('*');
+    elements.forEach((element) => {
+        element.style.color = '#fff';
+    });
+}
+
+function switchToLightTheme() {
+    document.body.style.backgroundColor = '#fff';
+    document.body.style.color = '#333';
+    let elements = document.querySelectorAll('*');
+    elements.forEach((element) => {
+        element.style.color = '#333';
+    });
+}

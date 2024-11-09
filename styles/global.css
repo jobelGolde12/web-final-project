@@ -19,11 +19,24 @@
 .top{
     position: absolute;
     top: 0;
-    right: 0;
+    right: 9%;
     width: 15vw;
-    height: 5%;
+    padding-left: 1rem;
+    height: 8%;
     display: flex;
+    justify-content: center;
     gap: 2rem;
+    padding-top: .5rem;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+.top div abbr, .top div a{
+    font-size:1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+ .bi-sun{
+    display: none;
 }
 body{
     background: url('../images/Konona-bg.png') no-repeat center center;

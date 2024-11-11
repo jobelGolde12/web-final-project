@@ -29,10 +29,25 @@ body{
   color: #fff;
   text-decoration: none;
 }
+.top .right button{
+  background: rgba(0, 0, 0, 0.2);
+  padding: .5rem .7rem;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+}
+.top .right button:hover{
+  background: rgba(0, 0, 0, 0.1);
+}
+.top .right #cardButton{
+  display: none;
+}
 .right div #selectCategory{
   padding: .5rem .7rem;
   padding-right: .8rem;
 }
+
 .member-hero{
     margin-top: 4rem;
     position: absolute;
@@ -78,6 +93,7 @@ body{
   }
   .card-content{
     padding: .5rem;
+    display: block;
   }
   .card-image{
     overflow: hidden;
@@ -137,4 +153,20 @@ body{
     text-decoration: none;
     color: #333;
     font-size: 1.2rem;
+  }
+  .name{
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    display: none;
+  }
+  @media screen and (max-width: 800px){
+    .top{
+      flex-direction: column;
+      padding-left: .5rem;
+      gap: .5rem;
+    }
+    .member-hero{
+      margin-top: 6rem;
+    }
   }

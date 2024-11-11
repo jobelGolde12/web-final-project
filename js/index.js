@@ -6,6 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 document.addEventListener('DOMContentLoaded', () => {
+  const list = document.querySelector('.about');
+  list.addEventListener('click', () => {
+      window.location.href = '../pages/about.html';
+
+  })
+})
+document.addEventListener('DOMContentLoaded', () => {
   const list = document.querySelector('.bi-house');
   list.addEventListener('click', () => {
       window.location.href = '../../index.html';

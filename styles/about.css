@@ -44,7 +44,7 @@ body {
     color: #00b4d8;
   }
 
-  header .back {
+  .back {
     background-color: #4b66f0;
     padding: 10px 20px;
     border-radius: 5px;
@@ -53,6 +53,9 @@ body {
     font-weight: bold;
     transition: 0.3s ease;
     cursor: pointer;
+  }
+  .back2{
+    display: none;
   }
 
    header .back:hover {
@@ -129,4 +132,12 @@ body {
 .info p {
     line-height: 1.6;
     margin-bottom: 10px;
+}
+@media screen and (max-width: 800px){
+    header{
+        display: none;
+    }
+    .back2{
+        display: block;
+      }
 }

@@ -1,5 +1,5 @@
 
-let card = document.querySelectorAll('.card');
+let card = document.querySelectorAll('.member-hero');
 let nameView = document.querySelector('.name');
 let cardButton = document.getElementById('cardButton');
 let nameButton = document.getElementById('nameButton');

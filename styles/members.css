@@ -231,6 +231,7 @@ body{
   color: #fff;
   border: none;
   border-radius: 5px;
+  text-decoration: none;
 }
 .top .right-sm a{
   background: rgba(0, 0, 0, 0.5);
@@ -253,8 +254,9 @@ body{
       margin-top: 6rem;
     }
     .top{
-      justify-content: space-between;
+      justify-content: space-around;
       flex-direction: row;
+      color: #fff;
     }
     .top .right-sm{
       display: flex;
@@ -272,5 +274,12 @@ body{
   .sm-screen{
     display: flex;
     flex-direction: column;
+  }
+  body{
+    height: 200vh;
+  }
+  .container{
+
+    margin-bottom: 2rem;
   }
   }

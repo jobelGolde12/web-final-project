@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 } 
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
 :root{
     --clr-primary: #fff;
     --clr-secondary: #333;
@@ -207,18 +212,29 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 }
 .right-footer div:nth-child(1) i{
     color: var(--clr-primary);
     font-size: 2rem;
-    padding: .6rem .8rem;
+    padding: .5rem .7rem;
     border-radius: 50%;
     background: #333;
+    animation: animateIcon 1s linear infinite;
+    border: 3px solid rgb(89, 72, 72);
+}
+@keyframes animateIcon {
+    from{
+    padding: .5rem .7rem;
+    }
+    to{
+    padding: .6rem .8rem;
+    }
 }
 .right-footer div:nth-child(2) a{
     text-decoration: none;
     color: var(--clr-primary);
-}
+}   
 .right-footer div:nth-child(2) a:hover{
     color: #f5f5f5f5;
 }

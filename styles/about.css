@@ -7,6 +7,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #fff;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
   }
 
   section{
@@ -67,6 +70,7 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
   }
 
   .hero img {
@@ -91,9 +95,21 @@ body {
   }
 
   .content h1 {
-    font-size: 4rem;
+    font-size: 20rem;
+    position: absolute;
+    animation: animateH1 1s ease forwards;
+  }
+  @keyframes animateH1 {
+    from{
+    font-size: 20rem;
+    }
+    to{
+    font-size: 5rem;
     margin-bottom: 0;
     padding-bottom: 0;
+    position: relative;
+    }
+
   }
 
   .tags {
@@ -103,10 +119,25 @@ body {
   }
 
   .tag {
-    background-color: #3a3a3a;
+    background-color: #ea3636;
     padding:.5rem 1rem;
     border-radius: 5px;
     font-size: 0.9rem;
+    animation: animatetag 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    color: #fff;
+  }
+  @keyframes animatetag {
+    from{
+    opacity: 0;
+    }
+    to{
+    opacity: 1;
+    background-color: #3a3a3a;
+
+    }
+
   }
   .info {
     text-align: center;
